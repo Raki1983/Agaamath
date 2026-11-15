@@ -11,3 +11,9 @@ main{max-width:1180px;margin:auto;padding:0 24px}.hero{margin:34px 0 26px;backgr
 footer{background:#102a43;color:#fff;text-align:center;padding:35px 20px}.footer-brand{display:flex;justify-content:center;align-items:center;gap:10px;font:800 17px Manrope}.footer-logo{width:58px;height:58px;object-fit:contain;border-radius:50%;background:#fff}.footer-brand .brand-mark{background:#fff;color:#102a43}.footer-brand+.copyright,footer p{color:#c5d7e4;font-size:11px}.copyright{margin-top:22px}.toast{position:fixed;bottom:18px;left:50%;transform:translate(-50%,20px);opacity:0;background:#102a43;color:#fff;padding:11px 16px;border-radius:9px;font-size:12px;transition:.2s;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:760px){.topbar{height:70px}.brand-logo{width:48px;height:48px}.menu-button{display:block}.topbar nav{display:none;position:absolute;top:66px;left:0;right:0;background:#fff;padding:18px 24px;box-shadow:0 10px 20px #102a4318;flex-direction:column;gap:17px}.topbar nav.open{display:flex}.hero{grid-template-columns:1fr;padding:42px 27px;min-height:0}.hero-art{height:170px;margin-top:20px}.math-orbit{width:125px;height:125px;font-size:60px}.math-card{font-size:11px;padding:10px}.quick-grid{grid-template-columns:repeat(2,1fr);gap:9px;margin-bottom:48px}.feature{padding:15px}.video-panel{grid-template-columns:1fr;padding:20px}.grade-grid{grid-template-columns:repeat(3,1fr)}.section{margin-bottom:52px}.section-heading{align-items:start;gap:12px;flex-direction:column}.answer-grid{grid-template-columns:1fr}.quiz-card{padding:19px}main{padding:0 16px}}
 @media(min-width:761px) and (max-width:980px){.grade-grid{grid-template-columns:repeat(4,1fr)}}
+.site-logo {
+  height: 58px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+}
