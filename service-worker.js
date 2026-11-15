@@ -1,5 +1,4 @@
-const CACHE = "agaamath-v6";
-
+const CACHE = "agaamath-v7";
 const FILES = [
   "./",
   "./index.html",
@@ -7,22 +6,20 @@ const FILES = [
   "./app.js",
   "./manifest.webmanifest",
   "./assets/icon.svg",
-  "./agaamath-logo.jpg"
+  "./agaamath-logo.jpg",
+  "./assets/agaamath-icon-192.png",
+  "./assets/agaamath-icon-512.png"
 ];
 
 self.addEventListener("install", event => {
-  event.waitUntil(
-    caches.open(CACHE).then(cache => cache.addAll(FILES))
-  );
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)));
   self.skipWaiting();
 });
 
 self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys().then(keys =>
-      Promise.all(
-        keys.filter(key => key !== CACHE).map(key => caches.delete(key))
-      )
+      Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))
     )
   );
   self.clients.claim();
@@ -30,7 +27,6 @@ self.addEventListener("activate", event => {
 
 self.addEventListener("fetch", event => {
   if (event.request.method !== "GET") return;
-
   event.respondWith(
     caches.match(event.request).then(cached =>
       cached || fetch(event.request)

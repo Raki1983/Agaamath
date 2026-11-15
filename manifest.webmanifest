@@ -2,16 +2,29 @@
   "name": "AGAA-MATH Learning App",
   "short_name": "AGAA-MATH",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#f6f9fc",
   "theme_color": "#102a43",
   "description": "Learn mathematics with AGAA-MATH.",
   "icons": [
     {
-      "src": "assets/icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "src": "assets/agaamath-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/agaamath-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/agaamath-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
