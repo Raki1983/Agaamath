@@ -1,6 +1,6 @@
 // AGAA-MATH starter content. Replace/add topics, YouTube playlist ID and worksheet links here.
 const CHANNEL_URL = "https://www.youtube.com/@agaamath";
-const YOUTUBE_PLAYLIST_ID = ""; // Example: PLxxxxxxxxxxxxxxxx (optional)
+const YOUTUBE_PLAYLIST_ID = "PLrEgewX8HhryUCBdki2i613LtOI1ikD-S";
 const GRADE_TOPICS = {
   1:["Counting","Addition","Subtraction","Shapes"],
   2:["Place Value","Addition & Subtraction","Measurement","Time"],
