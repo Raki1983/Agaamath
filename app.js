@@ -15,7 +15,20 @@ const GRADE_TOPICS = {
   11:["Sets","Functions","Sequences & Series","Coordinate Geometry"],
   12:["Matrices","Calculus","Vectors","Probability"]
 };
-const WORKSHEETS = []; // Example: {title:"Grade 6 Fractions",url:"worksheets/g6-fractions.pdf",grade:6}
+
+const WORKSHEETS = [
+  {title:"Grade 1 Mathematics Worksheet",url:"worksheets/grade-1-mathematics-worksheet.pdf",grade:1},
+  {title:"Grade 2 Mathematics Worksheet",url:"worksheets/grade-2-mathematics-worksheet.pdf",grade:2},
+  {title:"Grade 3 Mathematics Worksheet",url:"worksheets/grade-3-mathematics-worksheet.pdf",grade:3},
+  {title:"Grade 4 Mathematics Worksheet",url:"worksheets/grade-4-mathematics-worksheet.pdf",grade:4},
+  {title:"Grade 5 Mathematics Worksheet",url:"worksheets/grade-5-mathematics-worksheet.pdf",grade:5},
+  {title:"Grade 6 Mathematics Worksheet",url:"worksheets/grade-6-mathematics-worksheet.pdf",grade:6},
+  {title:"Grade 7 Mathematics Worksheet",url:"worksheets/grade-7-mathematics-worksheet.pdf",grade:7},
+  {title:"Grade 8 Mathematics Worksheet",url:"worksheets/grade-8-mathematics-worksheet.pdf",grade:8},
+  {title:"Grade 9 Mathematics Worksheet",url:"worksheets/grade-9-mathematics-worksheet.pdf",grade:9},
+  {title:"Grade 10 Mathematics Worksheet",url:"worksheets/grade-10-mathematics-worksheet.pdf",grade:10}
+];
+
 const QUESTIONS = [
  {q:"What is 25% of 200?",a:["25","40","50","75"],correct:2,why:"25% = 1/4, and 200 ÷ 4 = 50."},
  {q:"What is the value of 7 × 8?",a:["54","56","64","48"],correct:1,why:"7 multiplied by 8 equals 56."},
