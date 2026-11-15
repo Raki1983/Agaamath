@@ -1,0 +1,17 @@
+{
+  "name": "AGAA-MATH Learning App",
+  "short_name": "AGAA-MATH",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f6f9fc",
+  "theme_color": "#102a43",
+  "description": "Learn mathematics with AGAA-MATH.",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

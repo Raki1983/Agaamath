@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a43">
+  <meta name="description" content="AGAA-MATH: Learn, practise and master mathematics with video lessons, worksheets and quizzes.">
+  <title>AGAA-MATH | Learn Mathematics the Smart Way</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="AGAA-MATH home">
+      <span class="brand-mark">A</span>
+      <span><strong>AGAA-MATH</strong><small>Learn Mathematics the Smart Way</small></span>
+    </a>
+    <button class="menu-button" id="menuButton" aria-label="Open navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#videos">Videos</a><a href="#classes">Classes</a><a href="#worksheets">Worksheets</a>
+      <a href="#quiz">Quizzes</a><a href="#solver">Math Practice</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">WELCOME TO AGAA-MATH</span>
+        <h1>Make Mathematics<br><span>Simple. Smart. Fun.</span></h1>
+        <p>Explore clear lessons, practise important concepts and build confidence in mathematics — from Grade 1 to Grade 12.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#classes">Start Learning</a>
+          <a class="button secondary" href="https://www.youtube.com/@agaamath" target="_blank" rel="noopener">Visit YouTube ↗</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="math-card card-one">π ≈ 3.14</div>
+        <div class="math-card card-two">a² + b² = c²</div>
+        <div class="math-orbit">∑</div>
+        <div class="math-card card-three">√ 144 = 12</div>
+      </div>
+    </section>
+
+    <section class="quick-grid" aria-label="Learning features">
+      <a class="feature" href="#videos"><span>▶</span><b>Video Lessons</b><small>Learn from AGAA-MATH</small></a>
+      <a class="feature" href="#classes"><span>▦</span><b>Grades 1–12</b><small>Explore by class</small></a>
+      <a class="feature" href="#worksheets"><span>▤</span><b>Worksheets</b><small>Practise with PDFs</small></a>
+      <a class="feature" href="#quiz"><span>✓</span><b>Quick Quizzes</b><small>Check your learning</small></a>
+    </section>
+
+    <section class="section" id="videos">
+      <div class="section-heading"><div><span class="eyebrow">WATCH & LEARN</span><h2>AGAA-MATH on YouTube</h2></div>
+        <a class="text-link" href="https://www.youtube.com/@agaamath" target="_blank" rel="noopener">Subscribe to channel ↗</a></div>
+      <div class="video-panel">
+        <div><div class="youtube-icon">▶</div><h3>Mathematics made easier</h3>
+          <p>Watch lessons, shortcuts, concept explanations and problem-solving videos on the official AGAA-MATH channel.</p>
+          <a class="button primary" href="https://www.youtube.com/@agaamath" target="_blank" rel="noopener">Open AGAA-MATH</a></div>
+        <div class="embed-placeholder"><div class="play-circle">▶</div><b>Your video playlist will appear here</b><small>Add your YouTube playlist ID in <code>app.js</code> to embed it.</small></div>
+      </div>
+    </section>
+
+    <section class="section" id="classes">
+      <div class="section-heading"><div><span class="eyebrow">CHOOSE YOUR LEVEL</span><h2>Learn by Grade</h2></div></div>
+      <div class="grade-grid" id="gradeGrid"></div>
+      <p class="hint">Choose a grade to view its starter topics. More curriculum-aligned lessons can be added through the content list in <code>app.js</code>.</p>
+    </section>
+
+    <section class="section" id="worksheets">
+      <div class="section-heading"><div><span class="eyebrow">PRACTISE MORE</span><h2>Worksheets & Resources</h2></div></div>
+      <div class="resource-box"><div class="resource-symbol">PDF</div><div><h3>Build your mathematics skills</h3>
+        <p>Worksheet downloads will be listed here as you add your PDF files to the <code>worksheets</code> folder and update <code>app.js</code>.</p>
+      </div></div>
+      <div id="worksheetList" class="worksheet-list"><p class="empty-state">No worksheets have been added yet. Your app is ready for your PDF resources.</p></div>
+    </section>
+
+    <section class="section" id="quiz">
+      <div class="section-heading"><div><span class="eyebrow">TEST YOURSELF</span><h2>Quick Mathematics Quiz</h2></div></div>
+      <div class="quiz-card">
+        <div class="quiz-top"><span id="questionCount">Question 1 of 5</span><span class="score" id="score">Score: 0</span></div>
+        <div class="progress"><span id="progressBar"></span></div>
+        <h3 id="questionText">Loading question…</h3>
+        <div id="answers" class="answer-grid"></div>
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+        <button class="button primary" id="nextQuestion" disabled>Next Question</button>
+        <button class="text-button" id="restartQuiz">Restart quiz</button>
+      </div>
+    </section>
+
+    <section class="section" id="solver">
+      <div class="section-heading"><div><span class="eyebrow">DAILY PRACTICE</span><h2>Math Practice Calculator</h2></div></div>
+      <div class="calculator">
+        <p>Use this basic calculator for arithmetic practice. It is not an AI step-by-step solver.</p>
+        <div class="calc-display" id="calcDisplay" aria-live="polite">0</div>
+        <div class="calc-keys" id="calcKeys">
+          <button data-key="7">7</button><button data-key="8">8</button><button data-key="9">9</button><button class="operator" data-key="/">÷</button>
+          <button data-key="4">4</button><button data-key="5">5</button><button data-key="6">6</button><button class="operator" data-key="*">×</button>
+          <button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button><button class="operator" data-key="-">−</button>
+          <button data-key="0">0</button><button data-key=".">.</button><button class="clear" data-key="C">C</button><button class="operator" data-key="+">+</button>
+          <button class="equals" data-key="=">=</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span class="brand-mark">A</span><b>AGAA-MATH</b></div>
+    <p>Learn • Practise • Explore • Excel</p>
+    <p class="copyright">© <span id="year"></span> AGAA-MATH. Educational learning platform.</p>
+  </footer>
+  <div id="toast" role="status" class="toast"></div>
+  <script src="app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js").catch(() => {}));
+  </script>
+</body>
+</html>
