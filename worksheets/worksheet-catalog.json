@@ -1,0 +1,62 @@
+[
+  {
+    "grade": 1,
+    "title": "Grade 1 Mathematics Worksheet",
+    "url": "worksheets/grade-1-mathematics-worksheet.pdf",
+    "description": "Counting, number sense, addition, subtraction and shapes"
+  },
+  {
+    "grade": 2,
+    "title": "Grade 2 Mathematics Worksheet",
+    "url": "worksheets/grade-2-mathematics-worksheet.pdf",
+    "description": "Place value, operations, time, money and measurement"
+  },
+  {
+    "grade": 3,
+    "title": "Grade 3 Mathematics Worksheet",
+    "url": "worksheets/grade-3-mathematics-worksheet.pdf",
+    "description": "Multiplication, division, fractions, measurement and data"
+  },
+  {
+    "grade": 4,
+    "title": "Grade 4 Mathematics Worksheet",
+    "url": "worksheets/grade-4-mathematics-worksheet.pdf",
+    "description": "Large numbers, factors, fractions, decimals and perimeter"
+  },
+  {
+    "grade": 5,
+    "title": "Grade 5 Mathematics Worksheet",
+    "url": "worksheets/grade-5-mathematics-worksheet.pdf",
+    "description": "Whole numbers, fractions, decimals, area and data handling"
+  },
+  {
+    "grade": 6,
+    "title": "Grade 6 Mathematics Worksheet",
+    "url": "worksheets/grade-6-mathematics-worksheet.pdf",
+    "description": "Integers, factors, fractions, decimals, ratio and basic algebra"
+  },
+  {
+    "grade": 7,
+    "title": "Grade 7 Mathematics Worksheet",
+    "url": "worksheets/grade-7-mathematics-worksheet.pdf",
+    "description": "Rational numbers, equations, percentages, lines and data"
+  },
+  {
+    "grade": 8,
+    "title": "Grade 8 Mathematics Worksheet",
+    "url": "worksheets/grade-8-mathematics-worksheet.pdf",
+    "description": "Rational numbers, linear equations, squares, algebra and mensuration"
+  },
+  {
+    "grade": 9,
+    "title": "Grade 9 Mathematics Worksheet",
+    "url": "worksheets/grade-9-mathematics-worksheet.pdf",
+    "description": "Number systems, polynomials, coordinate geometry, geometry and statistics"
+  },
+  {
+    "grade": 10,
+    "title": "Grade 10 Mathematics Worksheet",
+    "url": "worksheets/grade-10-mathematics-worksheet.pdf",
+    "description": "Real numbers, algebra, quadratic equations, trigonometry, coordinate geometry and probability"
+  }
+]
