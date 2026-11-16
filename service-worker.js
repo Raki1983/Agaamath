@@ -1,9 +1,10 @@
-const CACHE = "agaamath-v7";
+const CACHE = "agaamath-v8";
 const FILES = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
+  "./firebase-auth.js",
   "./manifest.webmanifest",
   "./assets/icon.svg",
   "./agaamath-logo.jpg",

@@ -27,6 +27,7 @@
     <a href="#worksheets">Worksheets</a>
     <a href="#quiz">Quizzes</a>
     <a href="#solver">Math Practice</a>
+    <a href="#student-login">Student Login</a>
   </nav>
 </header>
   <main>
@@ -53,6 +54,30 @@
       <a class="feature" href="#classes"><span>▦</span><b>Grades 1–12</b><small>Explore by class</small></a>
       <a class="feature" href="#worksheets"><span>▤</span><b>Worksheets</b><small>Practise with PDFs</small></a>
       <a class="feature" href="#quiz"><span>✓</span><b>Quick Quizzes</b><small>Check your learning</small></a>
+    </section>
+
+    <section class="section" id="student-login">
+      <div class="section-heading"><div><span class="eyebrow">STUDENT AREA</span><h2>Student Login</h2></div></div>
+      <div class="student-auth-card">
+        <div id="studentLoginPanel">
+          <p class="student-auth-intro">Sign in with the Student ID and password provided by your teacher.</p>
+          <form id="studentLoginForm" class="student-login-form">
+            <label for="studentIdInput">Student ID</label>
+            <input id="studentIdInput" name="studentId" type="text" autocomplete="username" placeholder="e.g. STUDENT001" required maxlength="64" autocapitalize="characters">
+            <label for="studentPasswordInput">Password</label>
+            <input id="studentPasswordInput" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+            <button class="button primary" id="studentLoginButton" type="submit">Sign in</button>
+            <p id="studentLoginMessage" class="student-auth-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div id="studentDashboard" hidden>
+          <p class="eyebrow">SIGNED IN</p>
+          <h3 id="studentWelcome">Welcome!</h3>
+          <p id="studentGrade" class="student-grade"></p>
+          <p class="student-auth-intro">Your student account is active. Learning progress features will be added in a later update.</p>
+          <button class="button student-signout" id="studentLogoutButton" type="button">Sign out</button>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="videos">
@@ -119,6 +144,7 @@
   </footer>
   <div id="toast" role="status" class="toast"></div>
   <script src="app.js"></script>
+  <script type="module" src="firebase-auth.js"></script>
   <script>
     if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js").catch(() => {}));
   </script>

@@ -17,3 +17,20 @@ footer{background:#102a43;color:#fff;text-align:center;padding:35px 20px}.footer
   object-fit: contain;
   display: block;
 }
+
+
+/* Student sign-in */
+[hidden] { display: none !important; }
+.student-auth-card { max-width: 560px; background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 26px; box-shadow: 0 12px 32px #183b5508; }
+.student-auth-intro { color: var(--muted); font-size: 13px; line-height: 1.7; margin: 0 0 18px; }
+.student-login-form { display: grid; gap: 10px; }
+.student-login-form label { font-size: 12px; font-weight: 700; color: var(--navy); margin-top: 5px; }
+.student-login-form input { width: 100%; border: 1px solid #ccd9e3; border-radius: 10px; padding: 13px 14px; font: 14px 'DM Sans', sans-serif; color: var(--ink); background: #fff; }
+.student-login-form input:focus { outline: 3px solid #d8effa; border-color: #1684c7; }
+.student-login-form button { margin-top: 8px; justify-self: start; min-width: 130px; }
+.student-auth-message { min-height: 18px; margin: 2px 0 0; color: #a33333; font-size: 12px; line-height: 1.5; }
+.student-auth-message.success { color: #187344; }
+.student-grade { display: inline-block; margin: 0 0 15px; padding: 8px 12px; border-radius: 20px; background: #eaf5fb; color: #12699e; font-size: 12px; font-weight: 800; }
+.student-signout { border: 1px solid #cbd9e4; border-radius: 10px; padding: 12px 18px; background: #fff; color: var(--navy); font: 700 13px 'DM Sans', sans-serif; cursor: pointer; }
+.student-signout:hover { background: #f3f8fb; }
+@media(max-width:760px) { .student-auth-card { padding: 20px; } }
